@@ -39,7 +39,7 @@
   --background-gradient: linear-gradient(180deg, #D6DE28 0%, #79A840 100%);
   --surface-color: #ffffff;
 
-  background: var(--background-gradient); /* ✅ apply the gradient */
+  background: var(--background-gradient); /* âœ… apply the gradient */
   color: #000; /* optional: ensure text is readable */
 }
 
@@ -217,8 +217,13 @@ h6 {
   background: linear-gradient(180deg, #D6DE28 0%, #79A840 100%) !important;
 }
 
+
 .header.scrolled .navmenu a {
   color: #ffffff;
+}
+
+.navmenu a.active {
+  color: #135D76;
 }
 
 .header.scrolled .navmenu a:hover,
@@ -299,6 +304,15 @@ h6 {
 --------------------------------------------------------------*/
 /* Navmenu - Desktop */
 @media (min-width: 1200px) {
+  body.rtl .navmenu {
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+  }
+  
+  body.rtl .navmenu ul {
+    justify-content: center;
+  }
   .navmenu {
     padding: 0;
   }
